@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ГРАНТ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+</head>
+
+<body>
+        <header>
+            <img src="/img/podzamenu2.jpg" class="banner">
+            <img src="/img/testlogo.svg" alt="" class="logo__img">
+            <a href="#" class="logo">ГРАНТ</a>
+            <nav>
+                <ul class="list__ul">
+               
+                    <li><a href="">Главная</a></li>
+                    <li><a href="">Производства</a></li>
+                    <li><a href="">Наши работы</a></li>
+                    <li><a href="">О компании</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <div class="container">
+                <div class="card__glav">
+                    <h1>С чем мы работаем</h1>
+                    <p>Производственная компания ГРАНТ» успешно работает для вас на строительном <p>
+                        рынке г.Липецка с 1996 г.
+                        За время существования компании  нами приобретен
+                    </p> 
+                     <p> богатый опыт во многих видах деятельности
+                        связанных с производством </p>  <p>
+                            монтажом и обслуживанием различных видов товаров и услуг.
+                        </p> 
+                      </p>
+        
+                </div>
+              <div class="line"></div>
+               <div class="card__wraper">
+                <div class="card">
+                    <span>01</span>
+                    <div class="card__picture">
+                        <img src="/img/autogates.png" alt="">
+                    </div>
+                    <div class="card__text">
+                        <h1>Алюминевые конструкции</h1>
+                        <p>собственное производство оборудованное современными станками для изготовления
+                             конструкций любой сложности. Весь материал используемый на производстве имеет
+                              высокое качество и соответствует ГОСТам .</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <span>02</span>
+                    <div class="card__picture">
+                        <img src="/img/autogates.png" alt="">
+                    </div>
+                    <div class="card__text">
+                        <h1>Автоматические системы</h1>
+                        <p>собственное производство оборудованное современными станками для изготовления
+                             конструкций любой сложности. Весь материал используемый на производстве имеет
+                              высокое качество и соответствует ГОСТам .</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <span>03</span>
+                    <div class="card__picture">
+                        <img src="/img/autogates.png" alt="">
+                    </div>
+                    <div class="card__text">
+                        <h1>Пластиковые окна</h1>
+                        <p>собственное производство оборудованное современными станками для изготовления
+                             конструкций любой сложности. Весь материал используемый на производстве имеет
+                              высокое качество и соответствует ГОСТам .</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <span>04</span>
+                    <div class="card__picture">
+                        <img src="/img/autogates.png" alt="">
+                    </div>
+                    <div class="card__text">
+                        <h1>Корпусная мебель</h1>
+                        <p>собственное производство оборудованное современными станками для изготовления
+                             конструкций любой сложности. Весь материал используемый на производстве имеет
+                              высокое качество и соответствует ГОСТам .</p>
+                    </div>
+                </div>
+               </div>
+              
+                
+           
+               <div class="contact__container">
+                <div class="line"></div>
+                <h1>Контакты</h1>
+                <div class="map__container">
+               
+
+                    <div id="map"></div>
+                   </div>
+               </div>
+               <div class="line"></div>   
+            <div class="form__container">          
+               <div class="left-side">
+                <div class="address details">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div class="topic">Адрес</div>
+                  <div class="text-one">г. Липецк</div>
+                  <div class="text-two">Поперечный проезд 11А </div>
+                </div>
+                <div class="phone details">
+                  <i class="fas fa-phone-alt"></i>
+                  <div class="topic">Телефон</div>
+                  <div class="text-one">+7 (4742) 50-52-52</div>
+                </div>
+                <div class="email details">
+                  <i class="fas fa-envelope"></i>
+                  <div class="topic">Email</div>
+                  <div class="text-one">support@site.com</div>
+                </div>
+              </div>
+              <div class="right-side">
+                <div class="topic-text">Напишите свой номер и менеджер Вам перезвонит</div>
+                <p>
+                  Для связи заполните форму ниже
+                </p>
+                <form action="send_mail.php" name="form" method="POST">
+                  <div class="input-box">
+                    <input
+                      type="text"
+                      placeholder="Ваше имя"
+                      name="name"
+                      id="name"
+                      data-reg="^[А-ЯЁ][а-яё]*$"
+                    />
+                    <label for="name">Только русские буквы</label>
+                  </div>
+               
+                  <div class="input-box">
+                    <input
+                      type="text"
+                      placeholder="Введите телефон"
+                      name="phone"
+                      id="phone"
+                      data-reg="^((\+7|7|8)+([0-9]){10})$"
+                    />
+                    <label for="phone">В формате: 88000000000 или 78000000000</label>
+                  </div>
+                  <div class="button">
+                    <input type="submit" id="button" value="Отправить" />
+                  </div>
+                </form>
+              </div>
+            </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+</body>
+    <script src="/script.js"></script>
+</html>

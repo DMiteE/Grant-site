@@ -1,0 +1,374 @@
+*
+{
+    font-family: 'Russo One', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --main-width: 1200px;
+  }
+  
+
+body{
+    min-height: 1000px;
+    background:#F8F8F8;
+    font-size: 16px;
+    line-height: 1.2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 0 100px;
+    background: #19181A;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: 1s;
+    
+}
+
+header.sticky{
+    height: 100px;
+    background:#19181A;
+    z-index: 2;
+}
+
+header .banner{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: 1s;
+}
+header.sticky .banner{
+    opacity: 0.1;
+}
+
+header .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 200px;
+    color: azure;
+    transition: 1s;
+    text-decoration: none;
+    z-index: 1;
+    font-weight: bold;
+}
+.logo__img{
+    width: 3%;
+    top: 43%;
+    left: 50%;
+    transform: translate(-43%,-50%);
+    color: azure;
+    transition: 1s;
+    opacity: 0;
+}
+header.sticky .logo__img{
+    position: absolute;
+    font-size: 40px;
+    left: 120px; 
+    opacity: 1;
+    transition: 1s;
+}
+header.sticky .logo{
+    position: absolute;
+    font-size: 40px;
+    left: 230px;
+}
+
+nav{
+    position: relative;
+    position: flex;
+    z-index: 1;
+}
+
+nav ul{
+    position: relative;
+    position: flex;
+    transition: 0.5s;   
+    transform: translateX(100px);
+    opacity: 0;
+}
+header.sticky nav ul{
+    transform: translateX(0);
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    position: relative;
+    color: azure;
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: azure;
+}
+
+.card__glav h1{
+    color:#19181A;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.card__glav p{
+    font-size: 18px;
+    display: flex;
+    margin: 0 auto;
+    width: 800px;
+    align-content: center;
+    justify-content: center;
+}
+ 
+.line {
+    border-bottom: 2px solid #19181a6c;
+    max-width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+   }
+section{
+    margin-top: 10vh;
+    padding: 100px;
+}
+.card__wraper{
+    display: inline-block;
+}
+
+section .card{
+    border-color: #19181A;
+    color:#19181A;
+    width: 297px;
+    height: 400px;
+    border: 2px solid;
+    padding: 20px;
+    display: inline-block;
+    margin-left: 5px;
+    background: #F8F8F8;
+    border-radius: 15px;
+    z-index: 0;
+    box-shadow: 0 0 10px rgba(116, 113, 113, 0.569); 
+}
+.card span{
+    margin-bottom: 0px;
+}
+
+.card h1{
+ font-size: 18px;
+ font-weight: bolder;
+}
+
+.card p{
+    color:#19181A;
+    font-size: 12px;
+    margin: 30px 0 30px 0;
+}
+
+.card img{
+    margin: 80px 0 20px 0;
+    width: 35px;
+   
+}
+
+section .card:hover{
+    filter: invert(1);
+    z-index: 0;
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.62); 
+}
+.line__uper{
+  
+    border-bottom: 2px solid #19181a6c;
+    max-width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contact__container{
+    margin-top: 500px;
+}
+
+.contact__container h1{
+    color:#19181A;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+
+.map__container{
+    position: relative;
+    display: flex;
+    flex-shrink: 1;
+}
+.map__contact{
+    display: inline-block;
+    margin: 0px 245px 50px 0px;
+    
+}
+.map__contact p{
+    margin-bottom: 10px; 
+    font-size: 20px;  
+}
+#map{
+    background:#19181A;
+    height: 550px;
+    width:100%;
+    display: inline-block;
+    border: 2px solid;
+    box-shadow: 0 0 10px rgba(116, 113, 113, 0.569); 
+}
+
+.form__container{
+    display: flex;
+}
+
+  
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+  }
+  
+  .left-side {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .left-side::before {
+    content: "";
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    background: #afafb6;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .phone,.email{
+    margin-top: 30px;
+  }
+
+  .right-side {
+    width: 50%;
+    margin-left: 50px;
+  }
+  
+  .details {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .details i {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .topic {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 7px;
+  }
+  
+  .text-one,
+  .text-two {
+    font-size: 22px;
+    color: #afafb6;
+  }
+  
+  .topic-text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .right-side p {
+    margin-bottom: 20px;
+  }
+  
+  .input-box {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .input-box input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background: #f0f1f8;
+    padding: 0 20px;
+    margin-bottom: 2px;
+  }
+  
+  .input-box label {
+    font-size: 14px;
+    color: #afafb6;
+    padding-left: 5px;
+  }
+  
+  .input-box textarea {
+    resize: none;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .message-box {
+    min-height: 110px;
+  }
+  
+  .button {
+    display: inline-block;
+  }
+  
+  .button input[type="submit"] {
+    color: #fff;
+    font-size: 18px;
+    background: black;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    transition: 0.2s;
+  }
+  
+  .button input[type="submit"]:hover {
+    background: rgb(50, 50, 53);
+  }
