@@ -287,14 +287,15 @@ nav ul li a:hover{
 .card__wraper{
 display: inline-block;
 position: relative;
-margin: 0px auto;
+    align-content: center;
+    justify-content: center;
 left: 250px;
 }
 
 .card{
   float:left;
   cursor: pointer;
-  margin: 50px;
+  margin: 100px;
 }
 .card__text{
   color: azure;
