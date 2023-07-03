@@ -2,155 +2,247 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ГРАНТ</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Wix+Madefor+Display&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="/Grant-site/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Wix+Madefor+Display&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/adaptive.css">
 </head>
 
 <body>
-  <header >
-    <img src="/Grant-site/podzamenu3.jpeg" class="banner">
-    <a href="#" class="logo">ГРАНТ</a>
-    <nav>
-      <ul class="list__ul">
+    <section class="wrapeer__mw">
+        <header class="header headfix">
+            <div class="header__logo">
+                <h1>ГРАНТ</h1>
+            </div>
+            <div class="header__menu acolor">
+                <ul>
+                    <li><a>г. Липецк Поперечный проезд 11А</a></li>
+                    <li><a>+7 (4742) 50-52-52</a></li>
+                </ul>
 
-        <li><a href="">Главная</a></li>
-        <li><a href="">Производства</a></li>
-        <li><a href="">Наши работы</a></li>
-        <li><a href="">О компании</a></li>
-        <li><a href="">Контакты</a></li>
-      </ul>
-    </nav>
-  </header>
+            </div>
+            <a class="header_touch">Позвонить</a>
+            <img class="hamburger" src="/Logos/Hamburger Menu.svg" alt="">
+        </header>
+    </section>
 
-  <div class="container">
-    <div class="main__info iSksGk">
-      <div class="card__glav">
-        <h1>С чем мы работаем</h1>
-        <p>Производственная компания ГРАНТ» успешно работает для вас на строительном <p>
-            рынке г.Липецка с 1996 г.
-            За время существования компании нами приобретен
-          </p>
-          <p> богатый опыт во многих видах деятельности
-            связанных с производством </p>
-          <p>
-            монтажом и обслуживанием различных видов товаров и услуг.
-          </p>
-        </p>
-        <button class="custom-btn btn-11"> <img src="/Grant-site/free-icon-phone-call-126509.png" class="btn__img" alt=""> <div class="dot"> </div></button>
-        
-      </div>
-      <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide"> <img src="/Grant-site/podzamenu.jpg" alt=""> </div>
-          <div class="swiper-slide"> <img src="/Grant-site/podzamenu2.jpg" alt=""> </div>
-          <div class="swiper-slide"> <img src="/Grant-site/podzamenu3.jpeg" alt=""> </div>
-          ...
+    <header class="header">
+        <div class="header__menu header__border">
+            <ul>
+                <li><a>Главная</a></li>
+                <li><a>Производство</a></li>
+                <li><a>Контакты</a></li>
+                <li><a>О нас</a></li>
+            </ul>
+
         </div>
-        <!-- If we need pagination -->
-      </div>
+        <img class="hamburger" src="/Logos/Hamburger Menu.svg" alt="">
+    </header>
 
-    </div>
+    <main>
+        <div class="conteiner">
+            <div class="main__container">
+                <div class="main_cont">
+                    <div class="discription">
+                        <div class="discription_main">
+                            <div class="sicription__info">
+                                <div class="discription_text">
+                                    <h1> С чем мы работаем?</h1>
+                                    <p>Производственная компания ГРАНТ» успешно работает для вас на строительном
+                                        рынке г.Липецка с 1996 г.
+                                        За время существования компании нами приобретен
 
+                                        богатый опыт во многих видах деятельности
+                                        связанных с производством
 
-      <div class="maincard__wraper ">
-        <div class="card__wraper iSksGk">
-          <div class="carf__cont">
+                                        монтажом и обслуживанием различных видов товаров и услуг.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="sicription__info">
+                                <div class="discription_text">
+                                    <div class="swiper">
+                                        <!-- Additional required wrapper -->
+                                        <div class="swiper-wrapper">
+                                            <!-- Slides -->
+                                            <div class="swiper-slide"> <img src="/img/podzamenu.jpg" alt=""> </div>
+                                            <div class="swiper-slide"> <img src="/img/podzamenu2.jpg" alt=""> </div>
+                                            <div class="swiper-slide"> <img src="/img/podzamenu3.jpeg" alt=""> </div>
+                                            ...
+                                        </div>
+                                        <!-- If we need pagination -->
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper__background">
+                    <div class="main__project">
+
+                        <div class="main__projcard1">
+                            <div class="main_photoproj">
+                                <img src="/Logos/Spense.png" alt="">
+                            </div>
+                            <div class="main__projtext">
+                                <a href="/automatic.html">
+                                    <h1>Автоматические системы =></h1>
+                                </a>
+                                <img src="/img/autodoor.jpeg" class="card__img" alt="">
+                            </div>
+                        </div>
+                        <div class="main__projcard">
+                            <div class="main_photoproj">
+                                <img src="/Logos/YelpCamp.png" alt="">
+                            </div>
+                            <div class="main__projtext">
+                                <a href="/alumconst.html">
+                                    <h1>Алюминевые конструкции =></h1>
+                                </a>
+                                <img src="/img/aluminievie-konstruktsii-1.jpg" class="card__img" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="main__project">
+                        <div class="main__projcard1">
+                            <div class="main_photoproj">
+                                <img src="/Logos/Spense.png" alt="">
+                            </div>
+                            <div class="main__projtext">
+                                <a href="/plastikwin.html">
+                                    <h1>Пластиковые окна =></h1>
+                                </a>
+                                <img src="/img/plastwindow.jpg" class="card__img" alt="">
+                            </div>
+                        </div>
+                        <div class="main__projcard">
+                            <div class="main_photoproj">
+                                <img src="/Logos/YelpCamp.png" alt="">
+                            </div>
+                            <div class="main__projtext">
+                                <a href="/mebel.html">
+                                    <h1>Мебель на заказ =></h1>
+                                </a>
+                                <img src="/img/korpusmebel.jpg" class="card__img" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <div class="discription">
+        <div class="main__logo">
+            <div class="card">  
+                <img src="/img/calculator (1).png" alt=""> 
+                <h3>Прозрачная стоимость</h3>
+            </div>
+            <div class="card">  
+                <img src="/img/settings.png" alt=""> 
+                <h3 class="text__master">Мастера с опытом от 10 лет</h3>
+                </div>
+            <div class="card">   
+                 <img src="/img/unlock.png" alt="">
+                 <h3 class="text__garant">Гарантия качества</h3>
+                </div>
             
-            <div class="card">
-              <div class="card__text">Алюминевые конструкции</div>
-              <div class="card__img"> <img src="/Grant-site/aluminievie-konstruktsii-1.jpg" alt=""> </div>
-            </div>
-            <div class="card">
-              <div class="card__text">Автоматические системы</div>
-              <div class="card__img"> <img src="/Grant-site/autodoor.jpeg" alt=""></div>
-            </div>
-            <div class="card">
-              <div class="card__text">Пластиковые окна</div>
-              <div class="card__img"><img src="/Grant-site/plastwindow.jpg" alt=""></div>
-            </div>
-            <div class="card">
-              <div class="card__text">Мебель на заказ</div>
-              <div class="card__img"><img src="/Grant-site/korpusmebel.jpg" alt=""></div>
-            </div>
-          </div>
          
-
-          </div>
-        </div>
-      </div>
-   
         
-      
-
-      <div class="contact__container">
-        <div class="line"></div>
-        <h1>Контакты</h1>
-        <div class="map__container">
-
-
-          <div id="map"></div>
         </div>
-      </div>
-      <div class="line"></div>
-      <div class="form__container">
-        <div class="left-side">
-          <div class="address details">
-            <i class="fas fa-map-marker-alt"></i>
-            <div class="topic">Адрес</div>
-            <div class="text-one">г. Липецк</div>
-            <div class="text-two">Поперечный проезд 11А </div>
-          </div>
-          <div class="phone details">
-            <i class="fas fa-phone-alt"></i>
-            <div class="topic">Телефон</div>
-            <div class="text-one">+7 (4742) 50-52-52</div>
-          </div>
-          <div class="email details">
-            <i class="fas fa-envelope"></i>
-            <div class="topic">Email</div>
-            <div class="text-one">support@site.com</div>
-          </div>
-        </div>
-        <div class="right-side">
-          <div class="topic-text">Напишите свой номер и менеджер Вам перезвонит</div>
-          <p>
-            Для связи заполните форму ниже
-          </p>
-          <form action="send_mail.php" name="form" method="POST">
-            <div class="input-box">
-              <input type="text" placeholder="Ваше имя" name="name" id="name" data-reg="^[А-ЯЁ][а-яё]*$" />
-              <label for="name">Только русские буквы</label>
-            </div>
-
-            <div class="input-box">
-              <input type="text" placeholder="Введите телефон" name="phone" id="phone"
-                data-reg="^((\+7|7|8)+([0-9]){10})$" />
-              <label for="phone">В формате: 88000000000 или 78000000000</label>
-            </div>
-            <div class="button">
-              <input type="submit" id="button" value="Отправить" />
-            </div>
-          </form>
-        </div>
-      </div>
     </div>
-  </main>
+    <div class="intrested__discription">
+        <div class="contact__container">
+            <div class="line"></div>
+            <h1>Контакты</h1>
+            <div class="map__container">
 
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+    <div class="intrested__discription">
+        <div class="line"></div>
+        <div class="form__container">
+            <div class="left-side">
+                <div class="address details">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="topic">Адрес</div>
+                    <div class="text-one">г. Липецк</div>
+                    <div class="text-two">Поперечный проезд 11А </div>
+                </div>
+                <div class="phone details">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="topic">Телефон</div>
+                    <div class="text-one">+7 (4742) 50-52-52</div>
+                </div>
+                <div class="email details">
+                    <i class="fas fa-envelope"></i>
+                    <div class="topic">Email</div>
+                    <div class="text-one">support@site.com</div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="topic-text">Напишите свой номер и менеджер Вам перезвонит</div>
+                <p>
+                    Для связи заполните форму ниже
+                </p>
+                <form action="send_mail.php" name="form" method="POST">
+                    <div class="input-box">
+                        <input type="text" placeholder="Ваше имя" name="name" id="name" data-reg="^[А-ЯЁ][а-яё]*$" />
+                        <label for="name">Только русские буквы</label>
+                    </div>
 
+                    <div class="input-box">
+                        <input type="text" placeholder="Введите телефон" name="phone" id="phone"
+                            data-reg="^((\+7|7|8)+([0-9]){10})$" />
+                        <label for="phone">В формате: 88000000000 или 78000000000</label>
+                    </div>
+                    <div class="button">
+                        <input type="submit" id="button" value="Отправить" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="conect__background">
+
+        <div class="conect">
+
+            <div class="conect__logo">
+                <p>© ООО "Грант" официальный представитель в Липецке</p>
+            </div>
+
+            <div class="conect__media">
+              <ul>
+
+              </ul>
+            </div>
+
+            <div class="copiright">
+                <p>© Все права защищены. Копирование материалов без разрешения автора запрещено.
+                    Сведения содержащиеся на сайте, носят исключительно информационный характер и не являются публичной офертой. Обратитесь к менеджеру, что бы узнать актуальную информацию и цены.
+                    </p>
+            </div>
+
+        </div>
+    </div>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-<script src="/Grant-site/script.js"></script>
+<script src="/script.js"></script>
 
 </html>
