@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Wix+Madefor+Display&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+    <link rel="stylesheet" href="/Grant-site/style.css">
+    <link rel="stylesheet" href="/Grant-site/adaptive.css">
+</head>
+
+<body>
+    <section class="wrapeer__mw">
+        <header class="header headfix">
+            <div class="header__logo">
+                <h1>ГРАНТокна</h1>
+            </div>
+            <div class="header__menu acolor">
+                <ul>
+                    <li><a>г. Липецк Поперечный проезд 11А</a></li>
+                    <li><a>+7 (4742) 50-52-52</a></li>
+                </ul>
+
+            </div>
+            <a class="header_touch">Позвонить</a>
+            <img class="hamburger" src="/Logos/Hamburger Menu.svg" alt="">
+        </header>
+    </section>
+
+    <header class="header">
+        <div class="header__menu header__border">
+            <ul>
+                <li><a>Главная</a></li>
+                <li><a>Производство</a></li>
+                <li><a>Контакты</a></li>
+                <li><a>О нас</a></li>
+            </ul>
+
+        </div>
+        <img class="hamburger" src="/Logos/Hamburger Menu.svg" alt="">
+    </header>
+
+    <main>
+        <div class="conteiner">
+            <div class="main__container">
+                <div class="main_cont">
+                    <div class="discription">
+                        <div class="discription_main">
+                            <div class="sicription__info">
+                                <div class="discription_text">
+                                    <h1> С чем мы работаем?</h1>
+                                    <p>Производственная компания ГРАНТ» успешно работает для вас на строительном
+                                        рынке г.Липецка с 1996 г.
+                                        За время существования компании нами приобретен
+
+                                        богатый опыт во многих видах деятельности
+                                        связанных с производством
+
+                                        монтажом и обслуживанием различных видов товаров и услуг.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="sicription__info">
+                                <div class="discription_text">
+                                    <div class="swiper">
+                                        <!-- Additional required wrapper -->
+                                        <div class="swiper-wrapper">
+                                            <!-- Slides -->
+                                            <div class="swiper-slide"> <img src="/Grant-site/img/podzamenu.jpg" alt=""> </div>
+                                            <div class="swiper-slide"> <img src="/Grant-site/img/podzamenu2.jpg" alt=""> </div>
+                                            <div class="swiper-slide"> <img src="/Grant-site/img/podzamenu3.jpeg" alt=""> </div>
+                                            ...
+                                        </div>
+                                        <!-- If we need pagination -->
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+
+    </main>
+    <div class="discription">
+        <div class="main__logo">
+            <div class="card">  
+                <img src="/Grant-site/img/calculator (1).png" alt=""> 
+                <h3>Прозрачная стоимость</h3>
+            </div>
+            <div class="card">  
+                <img src="/Grant-site/img/settings.png" alt=""> 
+                <h3 class="text__master">Мастера с опытом от 10 лет</h3>
+                </div>
+            <div class="card">   
+                 <img src="/Grant-site/img/unlock.png" alt="">
+                 <h3 class="text__garant">Гарантия качества</h3>
+                </div>
+            
+         
+        
+        </div>
+    </div>
+    <div class="intrested__discription">
+        <div class="contact__container">
+            <div class="line"></div>
+            <h1>Контакты</h1>
+            <div class="map__container">
+
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+    <div class="intrested__discription">
+        <div class="line"></div>
+        <div class="form__container">
+            <div class="left-side">
+                <div class="address details">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="topic">Адрес</div>
+                    <div class="text-one">г. Липецк</div>
+                    <div class="text-two">Поперечный проезд 11А </div>
+                </div>
+                <div class="phone details">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="topic">Телефон</div>
+                    <div class="text-one">+7 (4742) 50-52-52</div>
+                </div>
+                <div class="email details">
+                    <i class="fas fa-envelope"></i>
+                    <div class="topic">Email</div>
+                    <div class="text-one">support@site.com</div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="topic-text">Напишите свой номер и менеджер Вам перезвонит</div>
+                <p>
+                    Для связи заполните форму ниже
+                </p>
+                <form action="send_mail.php" name="form" method="POST">
+                    <div class="input-box">
+                        <input type="text" placeholder="Ваше имя" name="name" id="name" data-reg="^[А-ЯЁ][а-яё]*$" />
+                        <label for="name">Только русские буквы</label>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="text" placeholder="Введите телефон" name="phone" id="phone"
+                            data-reg="^((\+7|7|8)+([0-9]){10})$" />
+                        <label for="phone">В формате: 88000000000 или 78000000000</label>
+                    </div>
+                    <div class="button">
+                        <input type="submit" id="button" value="Отправить" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="conect__background">
+
+        <div class="conect">
+
+            <div class="conect__logo">
+                <p>© ООО "Грант" официальный представитель в Липецке</p>
+            </div>
+
+            <div class="conect__media">
+              <ul>
+
+              </ul>
+            </div>
+
+            <div class="copiright">
+                <p>© Все права защищены. Копирование материалов без разрешения автора запрещено.
+                    Сведения содержащиеся на сайте, носят исключительно информационный характер и не являются публичной офертой. Обратитесь к менеджеру, что бы узнать актуальную информацию и цены.
+                    </p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="/Grant-site/script.js"></script>
+
+</html>
